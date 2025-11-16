@@ -1,9 +1,3 @@
-/**
- * Backend API para ModeX (carpeta api/)
- * - Oculta los webhooks de Discord del frontend
- * - Expone endpoints seguros para logs de seguridad y comprobantes de pago
- */
-
 require('dotenv').config();
 
 const express = require('express');
@@ -14,7 +8,6 @@ const FormData = require('form-data');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Cargar webhooks desde variables de entorno (NUNCA en el frontend)
 const SECURITY_WEBHOOK_URL = process.env.SECURITY_WEBHOOK_URL;
 const PAYMENT_WEBHOOK_URL = process.env.PAYMENT_WEBHOOK_URL;
 
@@ -24,9 +17,6 @@ if (!SECURITY_WEBHOOK_URL || !PAYMENT_WEBHOOK_URL) {
   );
 }
 
-// Middleware CORS
-// Para desarrollo es cómodo permitir todos los orígenes (origin: true).
-// En producción puedes restringir a tu dominio (por ejemplo https://modex.lat).
 app.use(
   cors({
     origin: true,
@@ -37,15 +27,10 @@ app.use(
 
 app.use(express.json({ limit: '10mb' }));
 
-// Endpoint de prueba
 app.get('/', (req, res) => {
   res.json({ ok: true, message: 'ModeX API online' });
 });
 
-/**
- * POST /api/security-log
- * Recibe el payload de seguridad desde el frontend y lo reenvía al webhook de Discord.
- */
 app.post('/api/security-log', async (req, res) => {
   try {
     if (!SECURITY_WEBHOOK_URL) {
@@ -76,10 +61,6 @@ app.post('/api/security-log', async (req, res) => {
   }
 });
 
-/**
- * POST /api/payment/receipt
- * Recibe el comprobante de pago (datos + imagen base64) y lo envía al webhook de pagos.
- */
 app.post('/api/payment/receipt', async (req, res) => {
   try {
     if (!PAYMENT_WEBHOOK_URL) {
@@ -104,7 +85,6 @@ app.post('/api/payment/receipt', async (req, res) => {
     const amountText = `$${Number(price).toFixed(2)}`;
     const methodLabel = method === 'paypal' ? 'PayPal' : 'Binance';
 
-    // Embed principal (datos de la compra)
     const mainEmbed = {
       title: '💰 Nuevo Comprobante de Pago',
       color: method === 'paypal' ? 0x0070ba : 0xf3ba2f,
@@ -154,7 +134,6 @@ app.post('/api/payment/receipt', async (req, res) => {
       });
     }
 
-    // 1) Enviar embed principal
     const headResp = await fetch(PAYMENT_WEBHOOK_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -172,7 +151,6 @@ app.post('/api/payment/receipt', async (req, res) => {
       );
     }
 
-    // 2) Enviar imagen como archivo adjunto
     const match = imageDataUrl.match(/^data:(.+);base64,(.+)$/);
     if (!match) {
       console.error('[ModeX API] imageDataUrl no tiene el formato esperado data:*;base64,');

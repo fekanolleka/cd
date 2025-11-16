@@ -1,29 +1,22 @@
-// Popup de invitación a Discord (ModeX)
-// Muestra una vez por navegador usando localStorage.
-
 document.addEventListener('DOMContentLoaded', () => {
   try {
     const STORAGE_KEY = 'modex_discord_popup_hidden';
 
-    // Si el usuario ya lo cerró o se unió, no volver a mostrar
     if (typeof window !== 'undefined' && window.localStorage) {
       if (localStorage.getItem(STORAGE_KEY) === '1') {
         return;
       }
     }
 
-    // Crear overlay
     const overlay = document.createElement('div');
     overlay.id = 'modex-discord-popup';
     overlay.className =
       'fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 px-4';
 
-    // Contenedor del popup
     const popup = document.createElement('div');
     popup.className =
       'bg-gray-900 border border-yellow-500/40 rounded-2xl max-w-sm w-full p-6 relative shadow-2xl';
 
-    // Botón de cierre (X)
     const closeBtn = document.createElement('button');
     closeBtn.setAttribute('type', 'button');
     closeBtn.setAttribute('aria-label', 'Cerrar');
@@ -31,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
       'absolute top-3 right-3 text-gray-400 hover:text-white transition-colors';
     closeBtn.innerHTML = '<i class="fas fa-times text-xl"></i>';
 
-    // Contenido
     const iconWrap = document.createElement('div');
     iconWrap.className =
       'w-16 h-16 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center mx-auto mb-4 shadow-lg';
@@ -47,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
       'En nuestro servidor regalamos <span class="text-yellow-400 font-semibold">diamantes</span>, ' +
       '<span class="text-yellow-400 font-semibold">sensibilidades</span> y compartimos configuraciones PRO para Free Fire.';
 
-    // Botones
     const buttonsWrap = document.createElement('div');
     buttonsWrap.className = 'flex flex-col sm:flex-row gap-3 mt-2';
 
@@ -95,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
 
-    // Eventos
     closeBtn.addEventListener('click', hidePopup);
     laterBtn.addEventListener('click', hidePopup);
 
@@ -116,7 +106,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Mostrar después de un pequeño delay para no ser tan agresivo
     setTimeout(showPopup, 1800);
   } catch (e) {
     console.error('[ModeX Discord Popup] Error inicializando popup:', e);
