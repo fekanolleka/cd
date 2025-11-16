@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModeX Pro - Contacto</title>
+    <meta name="description" content="Contacta con ModeX Pro para soporte, dudas sobre sensibilidades hasta 200 y hacks profesionales para Free Fire.">
+    <meta name="keywords" content="contacto ModeX Pro, soporte Free Fire, sensibilidad 200, hacks, ayuda gaming">
+    <meta name="robots" content="index,follow">
+    <meta property="og:title" content="ModeX Pro - Contacto">
+    <meta property="og:description" content="¿Necesitas ayuda con tus configuraciones o compras? Habla con el equipo de ModeX Pro.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://modex.lat/contacto">
+    <meta property="og:image" content="../images/icon.png">
+    <link rel="icon" type="image/png" href="../images/icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body class="overflow-x-hidden relative bg-gray-900">
+    <!-- Header -->
+    <header class="bg-glass shadow-2xl sticky top-0 z-50 border-b border-yellow-500/30 backdrop-blur-xl">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="inicio.html" class="flex items-center space-x-3 group">
+                    <div class="relative">
+                        <i class="fas fa-fire text-yellow-500 text-3xl transform transition-all duration-500 group-hover:rotate-180 group-hover:scale-110 group-hover:text-yellow-400"></i>
+                        <span class="absolute -top-1 -right-1 w-2 h-2 bg-yellow-400 rounded-full animate-ping"></span>
+                        <span class="absolute -top-1 -right-1 w-2 h-2 bg-yellow-500 rounded-full"></span>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-bold gradient-text leading-tight">ModeX <span class="text-xs bg-yellow-500 text-black px-2 py-1 rounded-full ml-2 animate-pulse shadow-lg shadow-yellow-500/50">PRO</span></h1>
+                        <p class="text-xs text-gray-400 hidden md:block">Gaming Solutions</p>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="inicio.html" class="nav-link group relative px-4 py-2.5 text-white hover:text-yellow-400 transition-all duration-300 font-medium rounded-lg">
+                        <i class="fas fa-home mr-2"></i> Inicio
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 rounded-full transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute inset-0 bg-yellow-500/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    </a>
+                    <a href="tienda.html" class="nav-link group relative px-4 py-2.5 text-white hover:text-yellow-400 transition-all duración-300 font-medium rounded-lg">
+                        <i class="fas fa-shopping-cart mr-2"></i> Tienda
+                        <span class="nav-sticker absolute -top-2 -right-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-xs px-2 py-0.5 rounded-full shadow-lg animate-pulse">¡Nuevo!</span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 rounded-full transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute inset-0 bg-yellow-500/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    </a>
+                    <a href="sensibilidades.html" class="nav-link group relative px-4 py-2.5 text-white hover:text-yellow-400 transition-all duration-300 font-medium rounded-lg">
+                        <i class="fas fa-sliders-h mr-2"></i> Sensibilidades
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 rounded-full transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute inset-0 bg-yellow-500/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    </a>
+                    <a href="contacto.html" class="btn-primary group relative overflow-hidden px-6 py-2.5 rounded-full font-semibold text-black transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/50 border-2 border-yellow-400/50">
+                        <span class="relative z-10 flex items-center">
+                            <i class="fas fa-paper-plane mr-2"></i> Contacto
+                        </span>
+                        <span class="absolute inset-0 bg-gradient-to-r from-yellow-400 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                        <span class="absolute inset-0 bg-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    </a>
+                </div>
+                <button class="md:hidden text-white hover:text-yellow-400 transition-all duration-300 transform hover:scale-110 p-2 rounded-lg hover:bg-white/10" id="mobileMenuButton">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Menú móvil mejorado -->
+            <div class="md:hidden hidden mt-4 space-y-2 pb-4 animate-fadeIn" id="mobileMenu">
+                <a href="inicio.html" class="block px-4 py-3 rounded-lg bg-white/5 hover:bg-yellow-500/20 transition-all duration-300 text-white hover:text-yellow-400 transform hover:translate-x-2">
+                    <i class="fas fa-home mr-2"></i> Inicio
+                </a>
+                <a href="tienda.html" class="block px-4 py-3 rounded-lg bg-white/5 hover:bg-yellow-500/20 transition-all duración-300 text-white hover:text-yellow-400 transform hover:translate-x-2">
+                    <i class="fas fa-shopping-cart mr-2"></i> Tienda
+                </a>
+                <a href="sensibilidades.html" class="block px-4 py-3 rounded-lg bg-white/5 hover:bg-yellow-500/20 transition-all duration-300 text-white hover:text-yellow-400 transform hover:translate-x-2">
+                    <i class="fas fa-sliders-h mr-2"></i> Sensibilidades
+                </a>
+                <a href="contacto.html" class="block px-4 py-3 rounded-lg bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold transition-all duration-300 hover:from-yellow-400 hover:to-amber-400 transform hover:scale-105 shadow-lg">
+                    <i class="fas fa-paper-plane mr-2"></i> Contacto
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contacto Section -->
+    <section class="container mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                <span class="gradient-text">Contacto y Soporte</span> 📧
+            </h2>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                ¿Necesitas ayuda? Estamos aquí para ti. Contáctanos a través de cualquiera de nuestros canales de soporte.
+            </p>
+        </div>
+        
+        <div class="max-w-6xl mx-auto">
+            <!-- Sección principal de soporte -->
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Correo de Soporte -->
+                <div class="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-yellow-500/20">
+                    <div class="flex items-center justify-center w-20 h-20 bg-gradient-to-br from-yellow-500 to-amber-500 rounded-full mx-auto mb-6">
+                        <i class="fas fa-envelope text-3xl text-black"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center text-white mb-4">Correo de Soporte</h3>
+                    <p class="text-gray-300 text-center mb-6">
+                        Escríbenos a nuestro correo oficial para cualquier consulta, soporte técnico o información sobre nuestros productos.
+                    </p>
+                    <a href="mailto:support@modex.lat" class="block w-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-bold py-4 px-6 rounded-lg hover:shadow-lg hover:shadow-yellow-500/30 transition-all duration-300 transform hover:scale-105 text-center">
+                        <i class="fas fa-envelope mr-2"></i> support@modex.lat
+                    </a>
+                    <p class="text-sm text-gray-400 text-center mt-4">
+                        <i class="fas fa-clock mr-1"></i> Respuesta en menos de 24 horas
+                    </p>
+                </div>
+
+                <!-- Discord -->
+                <div class="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-indigo-500/30 hover:border-indigo-500/60 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/20">
+                    <div class="flex items-center justify-center w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full mx-auto mb-6">
+                        <i class="fab fa-discord text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center text-white mb-4">Discord</h3>
+                    <p class="text-gray-300 text-center mb-6">
+                        Únete a nuestra comunidad en Discord. Obtén soporte en tiempo real, participa en eventos exclusivos y conéctate con otros jugadores.
+                    </p>
+                    <a href="https://discord.gg/yW45axezqJ" target="_blank" rel="noopener" class="block w-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-bold py-4 px-6 rounded-lg hover:shadow-lg hover:shadow-indigo-500/30 transition-all duration-300 transform hover:scale-105 text-center">
+                        <i class="fab fa-discord mr-2"></i> Unirse a Discord
+                    </a>
+                    <p class="text-sm text-gray-400 text-center mt-4">
+                        <i class="fas fa-users mr-1"></i> Comunidad activa 24/7
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Sección con miembros del equipo -->
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- FEKANOLLEKA -->
+                <div class="bg-gradient-to-br from-yellow-500/10 to-amber-500/10 backdrop-blur-md rounded-2xl p-8 border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-yellow-500/20">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="relative mb-6">
+                            <img src="../images/fekanolleka.webp" alt="FEKANOLLEKA" class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full border-4 border-yellow-500 shadow-2xl shadow-yellow-500/30 transform hover:scale-105 transition-transform duration-300">
+                            <div class="absolute -bottom-2 -right-2 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold flex items-center gap-1">
+                                <i class="fas fa-code"></i> Dev
+                            </div>
+                        </div>
+                        <h3 class="text-3xl font-bold text-white mb-2">
+                            <span class="gradient-text">FEKANOLLEKA</span>
+                        </h3>
+                        <p class="text-yellow-300 text-lg font-semibold mb-4">Desarrollador & Propietario</p>
+                        <p class="text-gray-300 mb-6">
+                            Experto en desarrollo de software y estrategias de juego. Apasionado por crear las mejores herramientas para gamers. Especializado en optimización y desarrollo de hacks profesionales.
+                        </p>
+                        <div class="flex justify-center gap-4">
+                            <a href="https://github.com/fekanolleka" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-gray-700/50 hover:bg-gray-700 flex items-center justify-center text-gray-300 hover:text-white transition-all duration-300 transform hover:scale-110" aria-label="GitHub">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="https://discord.gg/modex" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-indigo-500/20 hover:bg-indigo-500/40 flex items-center justify-center text-indigo-400 hover:text-indigo-300 transition-all duration-300 transform hover:scale-110" aria-label="Discord">
+                                <i class="fab fa-discord text-xl"></i>
+                            </a>
+                            <a href="mailto:support@modex.lat" class="w-12 h-12 rounded-full bg-yellow-500/20 hover:bg-yellow-500/40 flex items-center justify-center text-yellow-400 hover:text-yellow-300 transition-all duration-300 transform hover:scale-110" aria-label="Email">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arceus -->
+                <div class="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 backdrop-blur-md rounded-2xl p-8 border border-purple-500/30 hover:border-purple-500/60 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/20">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="relative mb-6">
+                            <img src="../images/arceus.webp" alt="Arceus" class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full border-4 border-purple-500 shadow-2xl shadow-purple-500/30 transform hover:scale-105 transition-transform duration-300">
+                            <div class="absolute -bottom-2 -right-2 bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-bold flex items-center gap-1">
+                                <i class="fas fa-star"></i> Influencer
+                            </div>
+                        </div>
+                        <h3 class="text-3xl font-bold text-white mb-2">
+                            <span class="gradient-text">Arceus</span>
+                        </h3>
+                        <p class="text-purple-300 text-lg font-semibold mb-4">Propietario & Influencer</p>
+                        <p class="text-gray-300 mb-6">
+                            Influencer reconocido en la comunidad gamer. Especialista en estrategias avanzadas y contenido de alto nivel. Siempre disponible para ayudarte y resolver tus dudas.
+                        </p>
+                        <div class="flex justify-center gap-4">
+                            <a href="https://www.instagram.com/arceus200k" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-pink-500/20 hover:bg-pink-500/40 flex items-center justify-center text-pink-400 hover:text-pink-300 transition-all duration-300 transform hover:scale-110" aria-label="Instagram">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="https://discord.gg/modex" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-indigo-500/20 hover:bg-indigo-500/40 flex items-center justify-center text-indigo-400 hover:text-indigo-300 transition-all duration-300 transform hover:scale-110" aria-label="Discord">
+                                <i class="fab fa-discord text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Redes sociales adicionales -->
+            <div class="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-yellow-500/20">
+                <h3 class="text-2xl font-bold text-center text-white mb-6">También puedes encontrarnos en:</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <a href="https://wa.me/584223033333" target="_blank" rel="noopener" class="p-6 bg-white/5 rounded-xl border border-green-500/30 hover:border-green-500/60 transition-all duration-300 transform hover:scale-105 text-center group">
+                        <i class="fab fa-whatsapp text-4xl text-green-500 mb-3 group-hover:scale-110 transition-transform"></i>
+                        <h4 class="font-bold text-white mb-2">WhatsApp</h4>
+                        <p class="text-sm text-gray-400">Soporte rápido</p>
+                    </a>
+                    <a href="https://t.me/+tShN8jnbjJU3YmVh" target="_blank" rel="noopener" class="p-6 bg-white/5 rounded-xl border border-blue-500/30 hover:border-blue-500/60 transition-all duration-300 transform hover:scale-105 text-center group">
+                        <i class="fab fa-telegram text-4xl text-blue-500 mb-3 group-hover:scale-110 transition-transform"></i>
+                        <h4 class="font-bold text-white mb-2">Telegram</h4>
+                        <p class="text-sm text-gray-400">Canal oficial</p>
+                    </a>
+                    <a href="https://instagram.com/FEKANOLLEKA" target="_blank" rel="noopener" class="p-6 bg-white/5 rounded-xl border border-pink-500/30 hover:border-pink-500/60 transition-all duration-300 transform hover:scale-105 text-center group">
+                        <i class="fab fa-instagram text-4xl text-pink-500 mb-3 group-hover:scale-110 transition-transform"></i>
+                        <h4 class="font-bold text-white mb-2">Instagram</h4>
+                        <p class="text-sm text-gray-400">Síguenos</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-yellow-gradient py-8 mt-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                <i class="fas fa-fire text-white text-2xl"></i>
+                <h3 class="text-2xl font-bold text-white">ModeX</h3>
+            </div>
+            <p class="text-white mb-4">
+                © 2025 ModeX. Todos los derechos reservados.
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://instagram.com/FEKANOLLEKA" target="_blank" rel="noopener" class="text-white hover:text-yellow-100 transition">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="https://discord.gg/yW45axezqJ" target="_blank" rel="noopener" class="text-white hover:text-yellow-100 transition">
+                    <i class="fab fa-discord text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sistema de Seguridad y Logging -->
+    <script src="../js/security.js"></script>
+    
+    <!-- Sistema de Animaciones -->
+    <script src="../js/animations.js"></script>
+    
+    <script>
+        // Menú móvil
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+

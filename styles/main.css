@@ -1,0 +1,112 @@
+/* Estilos principales de la web */
+
+/* Reset y base */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Fondo con imagen - se aplica desde las páginas individuales si es necesario */
+body.index-body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Efecto de vidrio esmerilado */
+.glass-effect {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+/* Partículas flotantes */
+.particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+}
+
+.particle {
+    position: absolute;
+    background: rgba(255, 215, 0, 0.6);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: float 15s infinite ease-in-out;
+}
+
+/* Gradientes y efectos de texto */
+.gradient-text {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.yellow-gradient {
+    background: linear-gradient(135deg, #FFD700 0%, #FF8C00 100%);
+}
+
+.bg-yellow-gradient {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+}
+
+/* Secciones */
+.section {
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+/* Efecto de brillo al pasar el ratón sobre los títulos */
+h2, h3, .gradient-text {
+    transition: text-shadow 0.3s ease;
+}
+
+h2:hover, h3:hover, .gradient-text:hover {
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section {
+        padding: 3rem 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+

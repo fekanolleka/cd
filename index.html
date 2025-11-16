@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModeX - Sensibilidades y Hacks para Free Fire</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+    <body class="overflow-x-hidden relative index-body">
+        <!-- Partículas flotantes -->
+        <div id="particles" class="particles"></div>
+    <!-- Header -->
+    <header class="bg-glass shadow-2xl sticky top-0 z-50 border-b border-yellow-500/30 backdrop-blur-xl">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="pages/inicio.html" class="flex items-center space-x-3 group">
+                    <div class="relative">
+                        <i class="fas fa-fire text-yellow-500 text-3xl transform transition-all duration-500 group-hover:rotate-180 group-hover:scale-110 group-hover:text-yellow-400"></i>
+                        <span class="absolute -top-1 -right-1 w-2 h-2 bg-yellow-400 rounded-full animate-ping"></span>
+                        <span class="absolute -top-1 -right-1 w-2 h-2 bg-yellow-500 rounded-full"></span>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-bold gradient-text leading-tight">ModeX <span class="text-xs bg-yellow-500 text-black px-2 py-1 rounded-full ml-2 animate-pulse shadow-lg shadow-yellow-500/50">PRO</span></h1>
+                        <p class="text-xs text-gray-400 hidden md:block">Sensibilidades y Hacks para Free Fire</p>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="pages/inicio.html" class="nav-link group relative px-4 py-2.5 text-yellow-400 transition-all duration-300 font-medium rounded-lg">
+                        <i class="fas fa-home mr-2"></i> Inicio
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-400 rounded-full"></span>
+                        <span class="absolute inset-0 bg-yellow-500/10 rounded-lg opacity-100 transition-opacity duration-300"></span>
+                    </a>
+                    <a href="pages/tienda.html" class="nav-link group relative px-4 py-2.5 text-white hover:text-yellow-400 transition-all duration-300 font-medium rounded-lg">
+                        <i class="fas fa-shopping-cart mr-2"></i> Tienda
+                        <span class="nav-sticker absolute -top-2 -right-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-xs px-2 py-0.5 rounded-full shadow-lg animate-pulse">¡Nuevo!</span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 rounded-full transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute inset-0 bg-yellow-500/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    </a>
+                    <a href="pages/contacto.html" class="btn-primary group relative overflow-hidden px-6 py-2.5 rounded-full font-semibold text-black transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/50 border-2 border-yellow-400/50">
+                        <span class="relative z-10 flex items-center">
+                            <i class="fas fa-paper-plane mr-2"></i> Contacto
+                        </span>
+                        <span class="absolute inset-0 bg-gradient-to-r from-yellow-400 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                        <span class="absolute inset-0 bg-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    </a>
+                </div>
+                <button class="md:hidden text-white hover:text-yellow-400 transition-all duration-300 transform hover:scale-110 p-2 rounded-lg hover:bg-white/10" id="mobileMenuButton">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Menú móvil mejorado -->
+            <div class="md:hidden hidden mt-4 space-y-2 pb-4 animate-fadeIn" id="mobileMenu">
+                <a href="pages/inicio.html" class="block px-4 py-3 rounded-lg bg-white/5 hover:bg-yellow-500/20 transition-all duration-300 text-white hover:text-yellow-400 transform hover:translate-x-2">
+                    <i class="fas fa-home mr-2"></i> Inicio
+                </a>
+                <a href="pages/tienda.html" class="block px-4 py-3 rounded-lg bg-white/5 hover:bg-yellow-500/20 transition-all duration-300 text-white hover:text-yellow-400 transform hover:translate-x-2">
+                    <i class="fas fa-shopping-cart mr-2"></i> Tienda
+                </a>
+                <a href="pages/contacto.html" class="block px-4 py-3 rounded-lg bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold transition-all duration-300 hover:from-yellow-400 hover:to-amber-400 transform hover:scale-105 shadow-lg">
+                    <i class="fas fa-paper-plane mr-2"></i> Contacto
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative overflow-hidden py-32 md:py-40">
+        <!-- Efecto de partículas en el fondo -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-black/60"></div>
+            <div class="absolute inset-0 bg-[url('images/background.jpg')] bg-cover bg-center opacity-10"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <!-- Badge de destacado -->
+                <div class="inline-flex items-center bg-yellow-500/20 text-yellow-400 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-yellow-500/30">
+                    <i class="fas fa-bolt mr-2"></i>
+                    <span>¡Nuevos productos disponibles!</span>
+                </div>
+                
+                <!-- Título principal con efecto de brillo -->
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 leading-tight">
+                    <span class="gradient-text bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-500">
+                        ModeX
+                    </span>
+                    <span class="text-white">Pro</span>
+                </h1>
+                
+                <!-- Subtítulo con animación -->
+                <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+                    Potencia tu juego con nuestros <span class="text-yellow-400 font-semibold">hacks profesionales</span> y 
+                    <span class="text-yellow-400 font-semibold">sensibilidades optimizadas</span> para Free Fire
+                </p>
+                
+                <!-- Botones de acción -->
+                <div class="flex flex-col sm:flex-row justify-center gap-5">
+                    <a href="#tienda" class="btn-primary group relative overflow-hidden px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-yellow-500/20">
+                        <span class="relative z-10 flex items-center justify-center">
+                            <i class="fas fa-rocket mr-2"></i> Explorar Productos
+                        </span>
+                        <span class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    </a>
+                    
+                    <a href="#contacto" class="group relative overflow-hidden px-8 py-4 text-lg font-semibold rounded-full border-2 border-yellow-500 text-yellow-400 hover:text-black transition-all duration-300 transform hover:scale-105">
+                        <span class="relative z-10 flex items-center justify-center">
+                            <i class="fas fa-headset mr-2"></i> Soporte 24/7
+                        </span>
+                        <span class="absolute inset-0 bg-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></span>
+                    </a>
+                </div>
+                
+                <!-- Estadísticas destacadas -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto">
+                    <div class="bg-black/30 backdrop-blur-sm p-4 rounded-xl border border-white/10 hover:border-yellow-500/50 transition-all duration-300 group">
+                        <div class="text-3xl font-bold text-yellow-400 mb-2 group-hover:scale-110 transition-transform duration-300">5000+</div>
+                        <div class="text-sm text-gray-300">Clientes satisfechos</div>
+                    </div>
+                    <div class="bg-black/30 backdrop-blur-sm p-4 rounded-xl border border-white/10 hover:border-yellow-500/50 transition-all duration-300 group">
+                        <div class="text-3xl font-bold text-yellow-400 mb-2 group-hover:scale-110 transition-transform duration-300">99%</div>
+                        <div class="text-sm text-gray-300">Tasa de éxito</div>
+                    </div>
+                    <div class="bg-black/30 backdrop-blur-sm p-4 rounded-xl border border-white/10 hover:border-yellow-500/50 transition-all duration-300 group">
+                        <div class="text-3xl font-bold text-yellow-400 mb-2 group-hover:scale-110 transition-transform duration-300">24/7</div>
+                        <div class="text-sm text-gray-300">Soporte activo</div>
+                    </div>
+                    <div class="bg-black/30 backdrop-blur-sm p-4 rounded-xl border border-white/10 hover:border-yellow-500/50 transition-all duration-300 group">
+                        <div class="text-3xl font-bold text-yellow-400 mb-2 group-hover:scale-110 transition-transform duration-300">100%</div>
+                        <div class="text-sm text-gray-300">Seguro y confiable</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Flecha de desplazamiento -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#tienda" class="text-white/60 hover:text-yellow-400 transition-colors duration-300">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Tienda y Productos -->
+    <section id="tienda" class="container mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                <span class="gradient-text">Nuestros Productos</span> 🎮
+            </h2>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                Descubre nuestros productos premium para llevar tu juego al siguiente nivel
+            </p>
+        </div>
+
+        <!-- Pestañas de navegación -->
+        <div class="flex flex-wrap justify-center mb-12 border-b border-gray-700">
+            <button class="tab-button active px-6 py-3 text-lg font-medium text-yellow-400 border-b-2 border-yellow-400" data-tab="sensibilidades">
+                <i class="fas fa-sliders-h mr-2"></i> Sensibilidades
+            </button>
+            <button class="tab-button px-6 py-3 text-lg font-medium text-gray-400 hover:text-yellow-400 transition-colors" data-tab="Revendedores">
+                <i class="fas fa-th-large mr-2"></i> Revendedores
+            </button>
+            <button class="tab-button px-6 py-3 text-lg font-medium text-gray-400 hover:text-yellow-400 transition-colors" data-tab="hacks">
+                <i class="fas fa-code mr-2"></i> Hacks
+            </button>
+        </div>
+
+        <!-- Contenido de las pestañas -->
+        <div class="tab-content">
+            <!-- Pestaña de Sensibilidades -->
+            <div id="sensibilidades" class="tab-pane active">
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Sensibilidades iPhone -->
+                    <div class="bg-white/5 backdrop-blur-md rounded-3xl shadow-2xl overflow-hidden border border-yellow-400/30 hover:border-yellow-400/60 transition-all duration-300">
+                        <div class="bg-gradient-to-r from-yellow-600 to-amber-600 p-8 text-center">
+                            <i class="fab fa-apple text-6xl text-white mb-4"></i>
+                            <h3 class="text-3xl font-bold text-white">Sensibilidades iPhone</h3>
+                            <p class="text-yellow-100 mt-2 text-lg">Optimizadas para iOS</p>
+                        </div>
+                        <div class="p-8">
+                            <div class="space-y-6">
+                                <!-- Sensibilidad VIP -->
+                                <div class="bg-white/5 p-6 rounded-xl border border-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300">
+                                    <div class="flex justify-between items-center mb-4">
+                                        <h4 class="text-xl font-bold text-white">Sensibilidad VIP</h4>
+                                        <span class="text-3xl font-bold text-yellow-400">$10</span>
+                                    </div>
+                                    <ul class="space-y-3 text-gray-300 mb-6">
+                                        <li class="flex items-center">
+                                            <i class="fas fa-star text-yellow-400 mr-3"></i>
+                                            <span>Configuración profesional</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-star text-yellow-400 mr-3"></i>
+                                            <span>Máxima precisión</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-star text-yellow-400 mr-3"></i>
+                                            <span>Actualizaciones incluidas</span>
+                                        </li>
+                                    </ul>
+                                    <button onclick="showPrices('Sensibilidad VIP')" class="w-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-bold py-3 rounded-lg hover:shadow-lg hover:shadow-yellow-500/30 transition-all duration-300 transform hover:scale-105">
+                                        <i class="fas fa-shopping-cart mr-2"></i> Comprar Ahora
+                                    </button>
+                                </div>
+
+                                <!-- Modificación -->
+                                <div class="bg-white/5 p-6 rounded-xl border border-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300">
+                                    <div class="flex justify-between items-center mb-4">
+                                        <h4 class="text-xl font-bold text-white">Modificación</h4>
+                                        <span class="text-3xl font-bold text-yellow-400">$20</span>
+                                    </div>
+                                    <ul class="space-y-3 text-gray-300 mb-6">
+                                        <li class="flex items-center">
+                                            <i class="fas fa-tools text-yellow-400 mr-3"></i>
+                                            <span>Personalización completa</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-sliders-h text-yellow-400 mr-3"></i>
+                                            <span>Ajustes a medida</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-headset text-yellow-400 mr-3"></i>
+                                            <span>Soporte dedicado</span>
+                                        </li>
+                                    </ul>
+                                    <button onclick="showPrices('Modificación')" class="w-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-bold py-3 rounded-lg hover:shadow-lg hover:shadow-yellow-500/30 transition-all duration-300 transform hover:-translate-y-1">
+                                        <i class="fas fa-shopping-cart mr-2"></i> Comprar Ahora
+                                    </button>
+                                </div>
+
+                                <!-- Atajos -->
+                                <div class="bg-white/5 p-6 rounded-xl border border-yellow-400/20 hover:border-yellow-400/50 transition-all duration-300">
+                                    <div class="flex justify-between items-center mb-4">
+                                        <h4 class="text-xl font-bold text-white">Atajos</h4>
+                                        <span class="text-3xl font-bold text-yellow-400">$15</span>
+                                    </div>
+                                    <ul class="space-y-3 text-gray-300 mb-6">
+                                        <li class="flex items-center">
+                                            <i class="fas fa-bolt text-yellow-400 mr-3"></i>
+                                            <span>Controles optimizados</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-tachometer-alt text-yellow-400 mr-3"></i>
+                                            <span>Respuesta rápida</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-lock text-yellow-400 mr-3"></i>
+                                            <span>Configuraciones exclusivas</span>
+                                        </li>
+                                    </ul>
+                                    <button onclick="showPrices('Atajos')" class="w-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-bold py-3 rounded-lg hover:shadow-lg hover:shadow-yellow-500/30 transition-all duration-300 transform hover:-translate-y-1">
+                                        <i class="fas fa-shopping-cart mr-2"></i> Comprar Ahora
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sensibilidades Android -->
+                    <div class="bg-white/5 backdrop-blur-md rounded-3xl shadow-2xl overflow-hidden border border-yellow-400/30 hover:border-yellow-400/60 transition-all duration-300">
+                        <div class="bg-gradient-to-r from-green-600 to-emerald-600 p-8 text-center">
+                            <i class="fab fa-android text-6xl text-white mb-4"></i>
+                            <h3 class="text-3xl font-bold text-white">Sensibilidades Android</h3>
+                            <p class="text-yellow-100 mt-2 text-lg">Optimizadas para Android</p>
+                        </div>
+                        <div class="p-8">
+                            <div class="space-y-6">
+                                <!-- Talkback VIP -->
+                                <div class="bg-gradient-to-br from-yellow-500/10 to-transparent p-8 rounded-xl border border-yellow-400/30 relative overflow-hidden group">
+                                    <div class="absolute -top-3 -right-3 bg-yellow-500 text-black px-4 py-1 rounded-full text-xs font-bold rotate-12 transform group-hover:scale-110 transition-transform">
+                                        MÁS VENDIDO
+                                    </div>
+                                    <div class="text-center mb-6">
+                                        <h4 class="text-2xl font-bold text-white mb-2">Talkback VIP</h4>
+                                        <div class="text-4xl font-bold text-yellow-400 mb-1">$25</div>
+                                        <p class="text-sm text-gray-400">Pago único - Actualizaciones gratuitas</p>
+                                    </div>
+                                    <ul class="space-y-3 text-gray-300 mb-8">
+                                        <li class="flex items-center">
+                                            <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                            <span>Configuración VIP exclusiva</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                            <span>Soporte prioritario 24/7</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                            <span>Máximo rendimiento garantizado</span>
+                                        </li>
+                                    </ul>
+                                    <button onclick="showPrices('Talkback VIP')" class="w-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-bold py-4 rounded-lg hover:shadow-lg hover:shadow-yellow-500/30 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center">
+                                        <i class="fas fa-bolt mr-2"></i> Comprar Ahora
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pestaña de Revendedores -->
+            <div id="Revendedores" class="tab-pane hidden">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Panel iPhone -->
+                    <div class="bg-white/5 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden border border-yellow-400/30 hover:border-yellow-400/60 transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="bg-gradient-to-br from-purple-600 to-blue-600 p-8 text-center">
+                            <i class="fas fa-mobile-alt text-white text-5xl mb-4"></i>
+                            <h3 class="text-2xl font-bold text-white">Panel iPhone</h3>
+                            <p class="text-yellow-100 mt-2">BackJump Pro</p>
+                        </div>
+                        <div class="p-6">
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-center text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                    <span>BackJump avanzado</span>
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                    <span>Configuración profesional</span>
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                    <span>Soporte 24/7</span>
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                    <span>Actualizaciones gratuitas</span>
+                                </li>
+                            </ul>
+                            <button onclick="showPrices('Panel iPhone')" class="w-full bg-gradient-to-r from-purple-500 to-blue-500 text-white font-bold py-3 rounded-lg hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 transform hover:scale-105">
+                                <i class="fas fa-shopping-cart mr-2"></i> Comprar Ahora
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Panel PC -->
+                    <div class="bg-white/5 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden border border-yellow-400/30 hover:border-yellow-400/60 transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="bg-gradient-to-br from-blue-600 to-cyan-600 p-8 text-center">
+                            <i class="fas fa-desktop text-white text-5xl mb-4"></i>
+                            <h3 class="text-2xl font-bold text-white">Panel PC</h3>
+                            <p class="text-yellow-100 mt-2">Hacks profesionales</p>
+                        </div>
+                        <div class="p-6">
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-center text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                    <span>Aimbot avanzado</span>
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                    <span>Wallhack premium</span>
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                    <span>Protección anti-ban</span>
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                    <span>Soporte prioritario</span>
+                                </li>
+                            </ul>
+                            <button onclick="showPrices('Panel PC')" class="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold py-3 rounded-lg hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 transform hover:scale-105">
+                                <i class="fas fa-shopping-cart mr-2"></i> Comprar Ahora
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Panel Android -->
+                    <div class="bg-white/5 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden border border-yellow-400/30 hover:border-yellow-400/60 transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="bg-gradient-to-br from-green-600 to-emerald-600 p-8 text-center">
+                            <i class="fab fa-android text-white text-5xl mb-4"></i>
+                            <h3 class="text-2xl font-bold text-white">Panel Android</h3>
+                            <p class="text-yellow-100 mt-2">Hacks móviles</p>
+                        </div>
+                        <div class="p-6">
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-center text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                    <span>Aimbot móvil</span>
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                    <span>Sin root necesario</span>
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                    <span>Fácil instalación</span>
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                    <span>Soporte técnico</span>
+                                </li>
+                            </ul>
+                            <button onclick="showPrices('Panel Android')" class="w-full bg-gradient-to-r from-green-500 to-emerald-500 text-white font-bold py-3 rounded-lg hover:shadow-lg hover:shadow-green-500/30 transition-all duration-300 transform hover:scale-105">
+                                <i class="fas fa-shopping-cart mr-2"></i> Comprar Ahora
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pestaña de Hacks -->
+            <div id="hacks" class="tab-pane hidden">
+                <div class="max-w-4xl mx-auto bg-gradient-to-br from-yellow-900/30 to-amber-900/20 rounded-2xl p-8 border border-yellow-400/20">
+                    <div class="text-center mb-8">
+                        <h3 class="text-3xl font-bold text-yellow-400 mb-2">Hacks Premium</h3>
+                        <p class="text-gray-300">Selecciona el paquete que mejor se adapte a tus necesidades</p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Hack Básico -->
+                        <div class="bg-black/30 backdrop-blur-sm p-6 rounded-xl border border-yellow-400/30 hover:border-yellow-400/60 transition-all duration-300">
+                            <div class="text-center mb-6">
+                                <h4 class="text-2xl font-bold text-white">Paquete Básico</h4>
+                                <div class="text-4xl font-bold text-yellow-400 my-3">$19.99</div>
+                                <p class="text-sm text-gray-400">Ideal para principiantes</p>
+                            </div>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-center text-gray-300">
+                                    <i class="fas fa-check text-green-400 mr-3"></i>
+                                    <span>Aimbot básico</span>
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <i class="fas fa-check text-green-400 mr-3"></i>
+                                    <span>Wallhack simple</span>
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <i class="fas fa-check text-green-400 mr-3"></i>
+                                    <span>Soporte estándar</span>
+                                </li>
+                            </ul>
+                            <button class="w-full bg-gradient-to-r from-gray-600 to-gray-700 text-white font-bold py-3 rounded-lg hover:shadow-lg transition-all duration-300">
+                                Seleccionar
+                            </button>
+                        </div>
+
+                        <!-- Hack Premium -->
+                        <div class="bg-gradient-to-br from-yellow-600/20 to-amber-600/20 p-6 rounded-xl border-2 border-yellow-400/50 relative overflow-hidden group">
+                            <div class="absolute top-4 right-4 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded-full">
+                                RECOMENDADO
+                            </div>
+                            <div class="text-center mb-6">
+                                <h4 class="text-2xl font-bold text-white">Paquete Premium</h4>
+                                <div class="text-4xl font-bold text-yellow-400 my-3">$39.99</div>
+                                <p class="text-sm text-yellow-100">Lo más popular</p>
+                            </div>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-center text-white">
+                                    <i class="fas fa-star text-yellow-400 mr-3"></i>
+                                    <span>Aimbot avanzado</span>
+                                </li>
+                                <li class="flex items-center text-white">
+                                    <i class="fas fa-star text-yellow-400 mr-3"></i>
+                                    <span>Wallhack mejorado</span>
+                                </li>
+                                <li class="flex items-center text-white">
+                                    <i class="fas fa-star text-yellow-400 mr-3"></i>
+                                    <span>Sin detección</span>
+                                </li>
+                                <li class="flex items-center text-white">
+                                    <i class="fas fa-star text-yellow-400 mr-3"></i>
+                                    <span>Soporte prioritario</span>
+                                </li>
+                                <li class="flex items-center text-white">
+                                    <i class="fas fa-star text-yellow-400 mr-3"></i>
+                                    <span>Actualizaciones gratuitas</span>
+                                </li>
+                            </ul>
+                            <button class="w-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-bold py-3 rounded-lg hover:shadow-lg hover:shadow-yellow-500/30 transition-all duration-300 transform group-hover:scale-105">
+                                <i class="fas fa-crown mr-2"></i> Seleccionar Premium
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <p class="text-sm text-gray-400">
+                            <i class="fas fa-lock mr-2"></i> Pagos 100% seguros con cifrado SSL
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Métodos de Pago -->
+    <section id="pago" class="container mx-auto px-6 py-20">
+        <div class="bg-white rounded-3xl shadow-2xl p-12 max-w-5xl mx-auto border-4 border-yellow-400">
+            <h2 class="text-4xl md:text-5xl font-bold text-center gradient-text mb-4">
+                💳 Métodos de Pago
+            </h2>
+            <p class="text-center text-gray-700 text-lg mb-12">
+                Aceptamos múltiples formas de pago para tu comodidad
+            </p>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- PayPal -->
+                <div class="text-center p-6 bg-gradient-to-br from-yellow-50 to-white rounded-xl border-2 border-yellow-200 hover:border-yellow-400 transition hover:shadow-xl">
+                    <div class="bg-blue-100 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-paypal text-5xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">PayPal</h3>
+                    <p class="text-gray-600 text-sm">Pago seguro y rápido</p>
+                </div>
+
+                <!-- Binance -->
+                <div class="text-center p-6 bg-gradient-to-br from-yellow-50 to-white rounded-xl border-2 border-yellow-200 hover:border-yellow-400 transition hover:shadow-xl">
+                    <div class="bg-yellow-100 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-bitcoin text-5xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Binance</h3>
+                    <p class="text-gray-600 text-sm">Criptomonedas</p>
+                </div>
+
+                <!-- Zelle -->
+                <div class="text-center p-6 bg-gradient-to-br from-yellow-50 to-white rounded-xl border-2 border-yellow-200 hover:border-yellow-400 transition hover:shadow-xl">
+                    <div class="bg-purple-100 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-money-bill-wave text-5xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Zelle</h3>
+                    <p class="text-gray-600 text-sm">Transferencia directa</p>
+                </div>
+
+                <!-- Diamantes -->
+                <div class="text-center p-6 bg-gradient-to-br from-yellow-50 to-white rounded-xl border-2 border-yellow-200 hover:border-yellow-400 transition hover:shadow-xl">
+                    <div class="bg-pink-100 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-gem text-5xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Diamantes</h3>
+                    <p class="text-gray-600 text-sm">Free Fire</p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 text-lg mb-4">
+                    <i class="fas fa-shield-check text-green-500 mr-2"></i>
+                    Todos los pagos son 100% seguros y verificados
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="container mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                <span class="gradient-text">Contacto y Soporte</span> 📧
+            </h2>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                ¿Necesitas ayuda? Estamos aquí para ti. Contáctanos a través de cualquiera de nuestros canales de soporte.
+            </p>
+        </div>
+        
+        <div class="max-w-6xl mx-auto">
+            <!-- Sección principal de soporte -->
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Correo de Soporte -->
+                <div class="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-yellow-500/30 hover:border-yellow-500/60 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-yellow-500/20">
+                    <div class="flex items-center justify-center w-20 h-20 bg-gradient-to-br from-yellow-500 to-amber-500 rounded-full mx-auto mb-6">
+                        <i class="fas fa-envelope text-3xl text-black"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center text-white mb-4">Correo de Soporte</h3>
+                    <p class="text-gray-300 text-center mb-6">
+                        Escríbenos a nuestro correo oficial para cualquier consulta, soporte técnico o información sobre nuestros productos.
+                    </p>
+                    <a href="mailto:support@modex.lat" class="block w-full bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-bold py-4 px-6 rounded-lg hover:shadow-lg hover:shadow-yellow-500/30 transition-all duration-300 transform hover:scale-105 text-center">
+                        <i class="fas fa-envelope mr-2"></i> support@modex.lat
+                    </a>
+                    <p class="text-sm text-gray-400 text-center mt-4">
+                        <i class="fas fa-clock mr-1"></i> Respuesta en menos de 24 horas
+                    </p>
+                </div>
+
+                <!-- Discord -->
+                <div class="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-indigo-500/30 hover:border-indigo-500/60 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/20">
+                    <div class="flex items-center justify-center w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full mx-auto mb-6">
+                        <i class="fab fa-discord text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center text-white mb-4">Discord</h3>
+                    <p class="text-gray-300 text-center mb-6">
+                        Únete a nuestra comunidad en Discord. Obtén soporte en tiempo real, participa en eventos exclusivos y conéctate con otros jugadores.
+                    </p>
+                    <a href="https://discord.gg/yW45axezqJ" target="_blank" rel="noopener" class="block w-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-bold py-4 px-6 rounded-lg hover:shadow-lg hover:shadow-indigo-500/30 transition-all duration-300 transform hover:scale-105 text-center">
+                        <i class="fab fa-discord mr-2"></i> Unirse a Discord
+                    </a>
+                    <p class="text-sm text-gray-400 text-center mt-4">
+                        <i class="fas fa-users mr-1"></i> Comunidad activa 24/7
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Sección con imagen de Arceus destacada -->
+            <div class="bg-gradient-to-br from-purple-500/10 to-indigo-500/10 backdrop-blur-md rounded-2xl p-8 border border-purple-500/30 mb-12">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-shrink-0">
+                        <img src="images/arceus.webp" alt="Arceus" class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full border-4 border-purple-500 shadow-2xl shadow-purple-500/30 transform hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="flex-1 text-center md:text-left">
+                        <h3 class="text-3xl font-bold text-white mb-3">
+                            <span class="gradient-text">Arceus</span>
+                        </h3>
+                        <p class="text-purple-300 text-lg font-semibold mb-4">Propietario & Influencer</p>
+                        <p class="text-gray-300 mb-6">
+                            Influencer reconocido en la comunidad gamer. Especialista en estrategias avanzadas y contenido de alto nivel. Siempre disponible para ayudarte y resolver tus dudas.
+                        </p>
+                        <div class="flex justify-center md:justify-start gap-4">
+                            <a href="https://instagram.com/FEKANOLLEKA" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-pink-500/20 hover:bg-pink-500/40 flex items-center justify-center text-pink-400 hover:text-pink-300 transition-all duration-300 transform hover:scale-110" aria-label="Instagram">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="https://discord.gg/yW45axezqJ" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-indigo-500/20 hover:bg-indigo-500/40 flex items-center justify-center text-indigo-400 hover:text-indigo-300 transition-all duration-300 transform hover:scale-110" aria-label="Discord">
+                                <i class="fab fa-discord text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Redes sociales adicionales -->
+            <div class="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-yellow-500/20">
+                <h3 class="text-2xl font-bold text-center text-white mb-6">También puedes encontrarnos en:</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <a href="https://wa.me/584223033333" target="_blank" rel="noopener" class="p-6 bg-white/5 rounded-xl border border-green-500/30 hover:border-green-500/60 transition-all duration-300 transform hover:scale-105 text-center group">
+                        <i class="fab fa-whatsapp text-4xl text-green-500 mb-3 group-hover:scale-110 transition-transform"></i>
+                        <h4 class="font-bold text-white mb-2">WhatsApp</h4>
+                        <p class="text-sm text-gray-400">Soporte rápido</p>
+                    </a>
+                    <a href="https://t.me/+tShN8jnbjJU3YmVh" target="_blank" rel="noopener" class="p-6 bg-white/5 rounded-xl border border-blue-500/30 hover:border-blue-500/60 transition-all duration-300 transform hover:scale-105 text-center group">
+                        <i class="fab fa-telegram text-4xl text-blue-500 mb-3 group-hover:scale-110 transition-transform"></i>
+                        <h4 class="font-bold text-white mb-2">Telegram</h4>
+                        <p class="text-sm text-gray-400">Canal oficial</p>
+                    </a>
+                    <a href="https://instagram.com/FEKANOLLEKA" target="_blank" rel="noopener" class="p-6 bg-white/5 rounded-xl border border-pink-500/30 hover:border-pink-500/60 transition-all duration-300 transform hover:scale-105 text-center group">
+                        <i class="fab fa-instagram text-4xl text-pink-500 mb-3 group-hover:scale-110 transition-transform"></i>
+                        <h4 class="font-bold text-white mb-2">Instagram</h4>
+                        <p class="text-sm text-gray-400">Síguenos</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-yellow-gradient py-8 mt-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                <i class="fas fa-fire text-white text-2xl"></i>
+                <h3 class="text-2xl font-bold text-white">ModeX</h3>
+            </div>
+            <p class="text-white mb-4">
+                © 2025 ModeX. Todos los derechos reservados.
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://instagram.com/FEKANOLLEKA" target="_blank" rel="noopener" class="text-white hover:text-yellow-100 transition">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="https://discord.gg/yW45axezqJ" target="_blank" rel="noopener" class="text-white hover:text-yellow-100 transition">
+                    <i class="fab fa-discord text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Estilos adicionales para el modal -->
+    <style>
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        #priceModal:not(.hidden) #modalContent {
+            animation: modalFadeIn 0.3s ease-out;
+        }
+        
+        .duration-selector.selected {
+            border-color: #eab308 !important;
+            background-color: rgba(234, 179, 8, 0.1) !important;
+        }
+    </style>
+
+    <!-- Modal de Precios -->
+    <div id="priceModal" class="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm hidden items-center justify-center z-50" onclick="closeModal(event)">
+        <div class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-3xl p-8 max-w-2xl mx-4 w-full shadow-2xl border border-yellow-500/30" onclick="event.stopPropagation()" id="modalContent">
+            <div class="flex justify-between items-center mb-6">
+                <h3 id="modalTitle" class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-400"></h3>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/10 rounded-full">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <div id="durationSelection" class="mb-8">
+                <h4 class="text-xl font-semibold text-white mb-4 flex items-center">
+                    <i class="fas fa-calendar-alt text-yellow-400 mr-2"></i> Selecciona la duración:
+                </h4>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="border-2 border-yellow-500/30 rounded-xl p-5 hover:border-yellow-500 hover:bg-yellow-500/10 transition-all cursor-pointer duration-selector transform hover:scale-105" data-days="7">
+                        <h4 class="text-lg font-bold text-white mb-2">7 Días</h4>
+                        <p class="text-3xl font-bold text-yellow-400">
+                            <span id="price7days">$24.99</span>
+                            <span class="text-sm text-gray-400 line-through ml-2" id="originalPrice7days"></span>
+                        </p>
+                    </div>
+                    <div class="border-2 border-yellow-500 rounded-xl p-5 hover:border-yellow-400 hover:bg-yellow-500/10 transition-all cursor-pointer duration-selector relative transform hover:scale-105" data-days="31">
+                        <div class="absolute -top-3 right-2 bg-gradient-to-r from-yellow-500 to-amber-500 text-black px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                            POPULAR
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2">31 Días</h4>
+                        <p class="text-3xl font-bold text-yellow-400">
+                            <span id="price31days">$45.99</span>
+                            <span class="text-sm text-gray-400 line-through ml-2" id="originalPrice31days"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Selección de Método de Pago -->
+            <div id="paymentMethodSelection" class="hidden">
+                <h4 class="text-xl font-semibold text-white mb-4 flex items-center">
+                    <i class="fas fa-credit-card text-yellow-400 mr-2"></i> Selecciona método de pago:
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <!-- PayPal -->
+                    <div class="border-2 border-yellow-500/30 rounded-xl p-5 hover:border-yellow-500 hover:bg-yellow-500/10 transition-all cursor-pointer payment-method transform hover:scale-105" data-method="paypal">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-br from-yellow-400 to-amber-500 w-16 h-16 rounded-full flex items-center justify-center mb-3 shadow-lg">
+                                <i class="fab fa-paypal text-white text-3xl"></i>
+                            </div>
+                            <h5 class="font-bold text-white text-lg mb-2">PayPal</h5>
+                            <p class="text-sm text-gray-300">Envío directo al correo</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Binance -->
+                    <div class="border-2 border-yellow-500/30 rounded-xl p-5 hover:border-yellow-500 hover:bg-yellow-500/10 transition-all cursor-pointer payment-method transform hover:scale-105" data-method="binance">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-gradient-to-br from-yellow-500 to-orange-500 w-16 h-16 rounded-full flex items-center justify-center mb-3 shadow-lg">
+                                <i class="fab fa-bitcoin text-white text-3xl"></i>
+                            </div>
+                            <h5 class="font-bold text-white text-lg mb-2">Binance</h5>
+                            <p class="text-sm text-gray-300">Pago con ID de Binance</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="backToDuration" class="text-yellow-400 hover:text-yellow-300 font-medium flex items-center transition-colors mb-4">
+                    <i class="fas fa-arrow-left mr-2"></i> Volver
+                </button>
+            </div>
+
+            <!-- Información de Pago y Subida de Comprobante -->
+            <div id="paymentInfoSection" class="hidden">
+                <div class="bg-yellow-500/10 border-2 border-yellow-500/30 rounded-xl p-6 mb-6">
+                    <h4 class="text-xl font-semibold text-white mb-4 flex items-center">
+                        <i class="fas fa-info-circle text-yellow-400 mr-2"></i> Información de Pago
+                    </h4>
+                    
+                    <!-- PayPal Info -->
+                    <div id="paypalInfo" class="hidden">
+                        <p class="text-gray-300 mb-3">Envía el pago a:</p>
+                        <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm text-gray-400 mb-1">Correo PayPal:</p>
+                                    <p class="text-xl font-bold text-yellow-400" id="paypalEmailDisplay">777leog@gmail.com</p>
+                                </div>
+                                <button onclick="copyToClipboard(PAYMENT_CONFIG.paypalEmail, event)" class="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-lg font-semibold transition-colors">
+                                    <i class="fas fa-copy mr-2"></i> Copiar
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-400">
+                            <i class="fas fa-exclamation-triangle text-yellow-400 mr-2"></i>
+                            Envía exactamente <span class="font-bold text-yellow-400" id="paypalAmount"></span> a este correo
+                        </p>
+                    </div>
+                    
+                    <!-- Binance Info -->
+                    <div id="binanceInfo" class="hidden">
+                        <p class="text-gray-300 mb-3">Envía el pago a:</p>
+                        <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm text-gray-400 mb-1">ID de Binance:</p>
+                                    <p class="text-xl font-bold text-yellow-400" id="binanceIdDisplay">PENDIENTE</p>
+                                </div>
+                                <button onclick="copyToClipboard(PAYMENT_CONFIG.binanceId, event)" class="bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-2 rounded-lg font-semibold transition-colors">
+                                    <i class="fas fa-copy mr-2"></i> Copiar
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-400">
+                            <i class="fas fa-exclamation-triangle text-yellow-400 mr-2"></i>
+                            Envía exactamente <span class="font-bold text-yellow-400" id="binanceAmount"></span> a este ID
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Subida de Comprobante -->
+                <div class="bg-gray-800/50 rounded-xl p-6 border-2 border-dashed border-gray-600">
+                    <h4 class="text-lg font-semibold text-white mb-4 flex items-center">
+                        <i class="fas fa-upload text-yellow-400 mr-2"></i> Sube tu comprobante de pago
+                    </h4>
+                    
+                    <div class="mb-4">
+                        <input type="file" id="receiptUpload" accept="image/*" class="hidden">
+                        <label for="receiptUpload" class="cursor-pointer">
+                            <div id="uploadArea" class="border-2 border-dashed border-gray-600 rounded-lg p-8 text-center hover:border-yellow-500 transition-colors">
+                                <i class="fas fa-cloud-upload-alt text-4xl text-gray-400 mb-3"></i>
+                                <p class="text-white font-semibold mb-1">Haz clic para seleccionar imagen</p>
+                                <p class="text-sm text-gray-400">PNG, JPG, JPEG (Máx. 5MB)</p>
+                            </div>
+                        </label>
+                    </div>
+                    
+                    <!-- Vista previa de imagen -->
+                    <div id="imagePreview" class="hidden mb-4">
+                        <img id="previewImg" src="" alt="Vista previa" class="max-w-full h-auto rounded-lg border-2 border-yellow-500/30">
+                        <button onclick="removeImage()" class="mt-2 text-red-400 hover:text-red-300 text-sm">
+                            <i class="fas fa-times mr-1"></i> Eliminar imagen
+                        </button>
+                    </div>
+                    
+                    <!-- Información adicional -->
+                    <div class="mb-4">
+                        <label class="block text-sm font-semibold text-white mb-2">
+                            <i class="fas fa-comment mr-2 text-yellow-400"></i> Nota adicional (opcional):
+                        </label>
+                        <textarea id="paymentNote" rows="3" class="w-full bg-gray-800 border border-gray-600 rounded-lg p-3 text-white placeholder-gray-400 focus:border-yellow-500 focus:outline-none" placeholder="Agrega cualquier información adicional sobre tu pago..."></textarea>
+                    </div>
+                    
+                    <button id="submitPayment" class="w-full bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-400 hover:to-amber-400 text-black font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                        <i class="fas fa-paper-plane mr-2"></i> Enviar Comprobante
+                    </button>
+                    
+                    <p class="text-xs text-gray-400 mt-4 text-center">
+                        <i class="fas fa-shield-alt text-yellow-400 mr-1"></i>
+                        Tu comprobante será verificado y te contactaremos pronto
+                    </p>
+                </div>
+                
+                <button id="backToPaymentMethod" class="mt-4 text-yellow-400 hover:text-yellow-300 font-medium flex items-center transition-colors">
+                    <i class="fas fa-arrow-left mr-2"></i> Volver a métodos de pago
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sistema de Compras -->
+    <script src="js/payment-system.js"></script>
+    
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Tabs de la sección tienda
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetTab = button.dataset.tab;
+                    if (!targetTab) return;
+
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabPanes.forEach(pane => {
+                        if (pane.id === targetTab) {
+                            pane.classList.add('active');
+                            pane.classList.remove('hidden');
+                        } else {
+                            pane.classList.remove('active');
+                            pane.classList.add('hidden');
+                        }
+                    });
+
+                    button.classList.add('active');
+                });
+            });
+
+            const defaultTab = document.querySelector('.tab-button.active');
+            if (defaultTab) {
+                defaultTab.click();
+            }
+
+            // Partículas flotantes
+            const particlesContainer = document.getElementById('particles');
+            if (particlesContainer) {
+                const particleCount = 20;
+
+                const createParticle = () => {
+                    const particle = document.createElement('div');
+                    particle.classList.add('particle');
+
+                    const size = Math.random() * 10 + 5;
+                    particle.style.width = `${size}px`;
+                    particle.style.height = `${size}px`;
+
+                    particle.style.left = `${Math.random() * 100}%`;
+                    particle.style.top = `${Math.random() * 100}%`;
+
+                    particle.style.opacity = Math.random() * 0.6 + 0.1;
+
+                    const duration = Math.random() * 20 + 10;
+                    particle.style.animationDuration = `${duration}s`;
+                    particle.style.animationDelay = `-${Math.random() * 20}s`;
+
+                    particlesContainer.appendChild(particle);
+                };
+
+                for (let i = 0; i < particleCount; i++) {
+                    createParticle();
+                }
+            }
+
+            // Efecto de brillo en los títulos
+            const titles = document.querySelectorAll('h2, h3, .gradient-text');
+            titles.forEach(title => {
+                title.style.transition = 'text-shadow 0.3s ease';
+                title.addEventListener('mouseover', () => {
+                    title.style.textShadow = '0 0 10px rgba(255, 215, 0, 0.7)';
+                });
+                title.addEventListener('mouseout', () => {
+                    title.style.textShadow = 'none';
+                });
+            });
+
+            // Efecto de carga suave
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                document.body.style.transition = 'opacity 0.8s ease';
+                document.body.style.opacity = '1';
+            }, 100);
+
+            // Scroll suave con offset para evitar cubrir títulos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    if (!targetId || targetId === '#') return;
+
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        e.preventDefault();
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Menú móvil
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+    
+    <!-- Popup de invitación a Discord -->
+    <script src="js/discord-popup.js"></script>
+
+    <!-- Sistema de Seguridad y Logging -->
+    <script src="js/security.js"></script>
+    
+    <!-- Sistema de Animaciones -->
+    <script src="js/animations.js"></script>
+    
+    <!-- Sistema de Compras (ya incluido arriba pero por si acaso) -->
+    <script src="js/payment-system.js"></script>
+    </body>
+</html>

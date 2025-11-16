@@ -1,0 +1,30 @@
+/* Estilos del Navbar */
+.bg-glass {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.nav-sticker {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-size: 0.65rem;
+    font-weight: bold;
+    padding: 0.15rem 0.4rem;
+    border-radius: 50px;
+    color: white;
+    transform: rotate(12deg);
+    animation: pulse-sticker 2s infinite;
+}
+
+@keyframes pulse-sticker {
+    0%, 100% {
+        transform: rotate(12deg) scale(1);
+    }
+    50% {
+        transform: rotate(12deg) scale(1.05);
+    }
+}
+

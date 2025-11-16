@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModeX Pro - Sensibilidades Free Fire</title>
+    <meta name="description" content="Crea sensibilidades Free Fire hasta 200 con el generador de ModeX Pro y guarda presets personalizados según tu estilo de juego.">
+    <meta name="keywords" content="sensibilidades Free Fire, sensibilidad 200, generador de sensibilidad, ModeX Pro, punto rojo, HUD">
+    <meta name="robots" content="index,follow">
+    <meta property="og:title" content="ModeX Pro - Sensibilidades Free Fire">
+    <meta property="og:description" content="Genera sensibilidades base hasta 200 para Free Fire según tu dispositivo, estilo de juego y HUD.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://modex.lat/sensibilidades">
+    <meta property="og:image" content="../images/icon.png">
+    <link rel="icon" type="image/png" href="../images/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="bg-glass shadow-2xl sticky top-0 z-50 border-b border-yellow-500/30 backdrop-blur-xl">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="inicio.html" class="flex items-center space-x-3 group">
+                    <div class="relative">
+                        <i class="fas fa-fire text-yellow-500 text-3xl transform transition-all duration-500 group-hover:rotate-180 group-hover:scale-110 group-hover:text-yellow-400"></i>
+                        <span class="absolute -top-1 -right-1 w-2 h-2 bg-yellow-400 rounded-full animate-ping"></span>
+                        <span class="absolute -top-1 -right-1 w-2 h-2 bg-yellow-500 rounded-full"></span>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-bold gradient-text leading-tight">ModeX <span class="text-xs bg-yellow-500 text-black px-2 py-1 rounded-full ml-2 animate-pulse shadow-lg shadow-yellow-500/50">PRO</span></h1>
+                        <p class="text-xs text-gray-400 hidden md:block">Gaming Solutions</p>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="inicio.html" class="nav-link group relative px-4 py-2.5 text-white hover:text-yellow-400 transition-all duration-300 font-medium rounded-lg">
+                        <i class="fas fa-home mr-2"></i> Inicio
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 rounded-full transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute inset-0 bg-yellow-500/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    </a>
+                    <a href="tienda.html" class="nav-link group relative px-4 py-2.5 text-white hover:text-yellow-400 transition-all duration-300 font-medium rounded-lg">
+                        <i class="fas fa-shopping-cart mr-2"></i> Tienda
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 rounded-full transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute inset-0 bg-yellow-500/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    </a>
+                    <a href="sensibilidades.html" class="nav-link group relative px-4 py-2.5 text-yellow-400 transition-all duration-300 font-medium rounded-lg">
+                        <i class="fas fa-sliders-h mr-2"></i> Sensibilidades
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-yellow-400 rounded-full"></span>
+                        <span class="absolute inset-0 bg-yellow-500/10 rounded-lg opacity-100 transition-opacity duration-300"></span>
+                    </a>
+                    <a href="contacto.html" class="btn-primary group relative overflow-hidden px-6 py-2.5 rounded-full font-semibold text-black transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/50 border-2 border-yellow-400/50">
+                        <span class="relative z-10 flex items-center">
+                            <i class="fas fa-paper-plane mr-2"></i> Contacto
+                        </span>
+                        <span class="absolute inset-0 bg-gradient-to-r from-yellow-400 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                        <span class="absolute inset-0 bg-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    </a>
+                </div>
+                <button class="md:hidden text-white hover:text-yellow-400 transition-all duration-300 transform hover:scale-110 p-2 rounded-lg hover:bg-white/10" id="mobileMenuButton">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Menú móvil -->
+            <div class="md:hidden hidden mt-4 space-y-2 pb-4 animate-fadeIn" id="mobileMenu">
+                <a href="inicio.html" class="block px-4 py-3 rounded-lg bg-white/5 hover:bg-yellow-500/20 transition-all duration-300 text-white hover:text-yellow-400 transform hover:translate-x-2">
+                    <i class="fas fa-home mr-2"></i> Inicio
+                </a>
+                <a href="tienda.html" class="block px-4 py-3 rounded-lg bg-white/5 hover:bg-yellow-500/20 transition-all duration-300 text-white hover:text-yellow-400 transform hover:translate-x-2">
+                    <i class="fas fa-shopping-cart mr-2"></i> Tienda
+                </a>
+                <a href="sensibilidades.html" class="block px-4 py-3 rounded-lg bg-white/5 hover:bg-yellow-500/20 transition-all duration-300 text-white hover:text-yellow-400 transform hover:translate-x-2">
+                    <i class="fas fa-sliders-h mr-2"></i> Sensibilidades
+                </a>
+                <a href="contacto.html" class="block px-4 py-3 rounded-lg bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-semibold transition-all duration-300 hover:from-yellow-400 hover:to-amber-400 transform hover:scale-105 shadow-lg">
+                    <i class="fas fa-paper-plane mr-2"></i> Contacto
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero + Builder -->
+    <section class="relative overflow-hidden py-16 md:py-24">
+        <!-- Fondo -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-black/60"></div>
+            <div class="absolute inset-0 bg-[url('../images/background.jpg')] bg-cover bg-center opacity-10"></div>
+    </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-5xl mx-auto text-center mb-12">
+                <div class="inline-flex items-center bg-yellow-500/20 text-yellow-400 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-yellow-500/30">
+                    <i class="fas fa-crosshairs mr-2"></i>
+                    <span>CREADOR DE SENSIBILIDADES PARA FREE FIRE</span>
+      </div>
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-4">
+                    <span class="gradient-text">Sensibilidades</span> a tu Estilo 🎯
+                </h2>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+                    Genera una sensibilidad base optimizada para tu dispositivo y estilo de juego
+                    y, si quieres algo 100% competitivo, te hacemos una sensibilidad **PRO personalizada** en la tienda.
+                </p>
+    </div>
+
+            <div class="grid lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                <!-- Controles del generador -->
+                <div class="bg-black/40 border border-yellow-500/20 rounded-3xl p-6 md:p-8 backdrop-blur-md shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-sliders-h text-yellow-400 mr-3"></i>
+                        Configura tu perfil
+                    </h3>
+
+                    <div class="space-y-6">
+                        <!-- Dispositivo -->
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">
+                                <i class="fas fa-mobile-alt text-yellow-400 mr-2"></i> Dispositivo
+                            </label>
+                            <div class="grid grid-cols-2 gap-3">
+                                <button type="button" class="ff-chip ff-device active" data-device="iphone">
+                                    <i class="fab fa-apple mr-2"></i> iPhone / iOS
+                                </button>
+                                <button type="button" class="ff-chip ff-device" data-device="android">
+                                    <i class="fab fa-android mr-2"></i> Android
+                                </button>
+    </div>
+  </div>
+
+                        <!-- Estilo de juego -->
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">
+                                <i class="fas fa-bolt text-yellow-400 mr-2"></i> Estilo de juego
+                            </label>
+                            <div class="grid grid-cols-2 gap-3">
+                                <button type="button" class="ff-chip ff-style active" data-style="rush">
+                                    <i class="fas fa-fire mr-2"></i> Rush / Insano
+                                </button>
+                                <button type="button" class="ff-chip ff-style" data-style="control">
+                                    <i class="fas fa-bullseye mr-2"></i> Control / Precisión
+                                </button>
+                                <button type="button" class="ff-chip ff-style" data-style="intermedio">
+                                    <i class="fas fa-balance-scale mr-2"></i> Intermedio
+                                </button>
+                                <button type="button" class="ff-chip ff-style" data-style="emulador">
+                                    <i class="fas fa-desktop mr-2"></i> Emulador mobile-like
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Tamaño de pantalla / DPI -->
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">
+                                <i class="fas fa-expand-arrows-alt text-yellow-400 mr-2"></i> Tamaño de pantalla / DPI
+                            </label>
+                            <div class="grid grid-cols-3 gap-3">
+                                <button type="button" class="ff-chip ff-dpi" data-dpi="low">
+                                    Pantalla chica<br><span class="text-xs text-gray-400">~≤ 5.5"</span>
+                                </button>
+                                <button type="button" class="ff-chip ff-dpi active" data-dpi="medium">
+                                    Pantalla media<br><span class="text-xs text-gray-400">5.5" - 6.4"</span>
+                                </button>
+                                <button type="button" class="ff-chip ff-dpi" data-dpi="high">
+                                    Pantalla grande<br><span class="text-xs text-gray-400">≥ 6.5"</span>
+                                </button>
+      </div>
+    </div>
+
+                        <!-- Cantidad de dedos / HUD -->
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">
+                                <i class="fas fa-hand-pointer text-yellow-400 mr-2"></i> HUD / Cantidad de dedos
+                            </label>
+                            <div class="grid grid-cols-3 gap-3">
+                                <button type="button" class="ff-chip ff-hud" data-hud="2">
+                                    2 dedos
+                                </button>
+                                <button type="button" class="ff-chip ff-hud active" data-hud="3">
+                                    3 dedos
+                                </button>
+                                <button type="button" class="ff-chip ff-hud" data-hud="4">
+                                    4 dedos
+                                </button>
+      </div>
+    </div>
+
+                        <!-- Sensibilidad base (slider general) -->
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-200 mb-2">
+                                <i class="fas fa-tachometer-alt text-yellow-400 mr-2"></i> Sensibilidad base (fina)
+                            </label>
+                            <div class="flex items-center space-x-4">
+                                <input id="baseSensInput" type="range" min="50" max="200" value="120" class="flex-1">
+                                <span id="baseSensLabel" class="w-16 text-right font-bold text-yellow-400">120</span>
+      </div>
+                            <p class="text-xs text-gray-400 mt-1">
+                                Esto ajusta todo el perfil. Si vienes de otra sensi y te parece muy rápida/lenta,
+                                mueve este control y se recalcula todo.
+                            </p>
+    </div>
+
+                        <button id="generateBtn" class="w-full mt-4 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-400 hover:to-amber-400 text-black font-bold py-3 px-8 rounded-xl transition-all transform hover:scale-105 shadow-lg">
+                            <i class="fas fa-magic mr-2"></i> Generar Sensibilidad
+                        </button>
+    </div>
+  </div>
+
+                <!-- Resultado -->
+                <div class="bg-black/40 border border-yellow-500/20 rounded-3xl p-6 md:p-8 backdrop-blur-md shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-bullseye text-yellow-400 mr-3"></i>
+                        Tu sensibilidad recomendada
+                    </h3>
+                    <p class="text-sm text-gray-300 mb-4">
+                        Esta es una base **equilibrada** según lo que elegiste. Úsala como punto de partida,
+                        luego puedes afinar algunos puntos 1–3 niveles arriba o abajo según tu comodidad.
+                    </p>
+
+                    <div id="ffResultCard" class="space-y-4">
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="ff-sens-item">
+                                <span class="ff-sens-label">General</span>
+                                <span id="sensGeneral" class="ff-sens-value">80</span>
+                            </div>
+                            <div class="ff-sens-item">
+                                <span class="ff-sens-label">Punto rojo</span>
+                                <span id="sensRedDot" class="ff-sens-value">78</span>
+                            </div>
+                            <div class="ff-sens-item">
+                                <span class="ff-sens-label">Mira 2x</span>
+                                <span id="sens2x" class="ff-sens-value">75</span>
+                            </div>
+                            <div class="ff-sens-item">
+                                <span class="ff-sens-label">Mira 4x</span>
+                                <span id="sens4x" class="ff-sens-value">72</span>
+                            </div>
+                            <div class="ff-sens-item">
+                                <span class="ff-sens-label">AWM / Franco</span>
+                                <span id="sensAwm" class="ff-sens-value">60</span>
+                            </div>
+                            <div class="ff-sens-item">
+                                <span class="ff-sens-label">Mira libre</span>
+                                <span id="sensFreeLook" class="ff-sens-value">80</span>
+      </div>
+    </div>
+
+                        <div class="mt-4 p-4 bg-gray-900/70 rounded-2xl border border-gray-700">
+                            <p class="text-xs text-gray-300 mb-2">
+                                <i class="fas fa-info-circle text-yellow-400 mr-1"></i>
+                                Consejos rápidos para Free Fire:
+                            </p>
+                            <ul class="text-xs text-gray-400 space-y-1 text-left">
+                                <li>• Si se te va mucho la mira a la cabeza, baja 3–5 puntos General y Red Dot.</li>
+                                <li>• Si te cuesta levantar mira, súbelas 3–5 puntos.</li>
+                                <li>• AWM suele ir más baja para tener control fino en la mira.</li>
+                            </ul>
+      </div>
+
+                        <div class="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                            <button id="copyConfigBtn" class="w-full sm:w-auto bg-white/5 hover:bg-white/10 text-sm font-semibold px-4 py-2 rounded-lg flex items-center justify-center border border-yellow-500/40 transition-all">
+                                <i class="fas fa-copy mr-2"></i> Copiar configuración
+                            </button>
+                            <button id="savePresetBtn" class="w-full sm:w-auto bg-yellow-500/20 hover:bg-yellow-500/30 text-sm font-semibold px-4 py-2 rounded-lg flex items-center justify-center border border-yellow-500/40 transition-all">
+                                <i class="fas fa-save mr-2"></i> Guardar preset local
+                            </button>
+    </div>
+
+                        <!-- Presets guardados localmente -->
+                        <div id="presetListWrapper" class="mt-6 hidden">
+                            <h4 class="text-sm font-semibold text-gray-200 mb-2 flex items-center">
+                                <i class="fas fa-bookmark text-yellow-400 mr-2"></i> Presets guardados en este dispositivo
+                            </h4>
+                            <div id="presetList" class="space-y-2 text-sm text-gray-300">
+      </div>
+    </div>
+  </div>
+
+                    <div class="mt-8 p-5 rounded-2xl bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border border-yellow-500/40">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                            <div>
+                                <p class="text-sm font-semibold text-yellow-300">
+                                    ¿Quieres algo 100% PRO y hecho a mano?
+                                </p>
+                                <p class="text-xs text-gray-300">
+                                    En la tienda hacemos sensibilidades VIP personalizadas según tu dispositivo real,
+                                    mano dominante, estilo y errores que cometes en partida.
+                                </p>
+                            </div>
+                            <a href="tienda.html" class="inline-flex items-center justify-center bg-gradient-to-r from-yellow-500 to-amber-500 text-black font-bold px-5 py-2 rounded-full text-sm shadow-lg hover:from-yellow-400 hover:to-amber-400 transition-all">
+                                <i class="fas fa-crown mr-2"></i> Ver Sensibilidades VIP
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-yellow-600/10 to-amber-600/10 py-8 mt-10 border-t border-yellow-500/20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                <i class="fas fa-fire text-yellow-500 text-2xl"></i>
+                <h3 class="text-2xl font-bold text-white">ModeX</h3>
+            </div>
+            <p class="text-white mb-4">
+                © 2025 ModeX. Todos los derechos reservados.
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://instagram.com/FEKANOLLEKA" target="_blank" rel="noopener" class="text-white hover:text-yellow-400 transition">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="https://discord.gg/yW45axezqJ" target="_blank" rel="noopener" class="text-white hover:text-yellow-400 transition">
+                    <i class="fab fa-discord text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup de invitación a Discord -->
+    <script src="../js/discord-popup.js"></script>
+
+    <!-- Sistema de Seguridad y Logging -->
+    <script src="../js/security.js"></script>
+
+    <!-- Sistema de Animaciones -->
+    <script src="../js/animations.js"></script>
+
+  <script>
+        // Estilos de chips reutilizables
+        document.addEventListener('DOMContentLoaded', () => {
+            const baseSensInput = document.getElementById('baseSensInput');
+            const baseSensLabel = document.getElementById('baseSensLabel');
+            const generateBtn = document.getElementById('generateBtn');
+            const copyConfigBtn = document.getElementById('copyConfigBtn');
+            const savePresetBtn = document.getElementById('savePresetBtn');
+            const presetListWrapper = document.getElementById('presetListWrapper');
+            const presetList = document.getElementById('presetList');
+
+            const sensGeneral = document.getElementById('sensGeneral');
+            const sensRedDot = document.getElementById('sensRedDot');
+            const sens2x = document.getElementById('sens2x');
+            const sens4x = document.getElementById('sens4x');
+            const sensAwm = document.getElementById('sensAwm');
+            const sensFreeLook = document.getElementById('sensFreeLook');
+
+            const getActiveValue = (selector, attr) => {
+                const el = document.querySelector(selector + '.active');
+                return el ? el.getAttribute(attr) : null;
+            };
+
+            const applyChipBehavior = (className) => {
+                document.querySelectorAll('.' + className).forEach(chip => {
+                    chip.addEventListener('click', () => {
+                        document.querySelectorAll('.' + className).forEach(c => c.classList.remove('active'));
+                        chip.classList.add('active');
+                    });
+                });
+            };
+
+            applyChipBehavior('ff-device');
+            applyChipBehavior('ff-style');
+            applyChipBehavior('ff-dpi');
+            applyChipBehavior('ff-hud');
+
+            // Slider base
+            baseSensInput.addEventListener('input', () => {
+                baseSensLabel.textContent = baseSensInput.value;
+            });
+
+            function clamp(val) {
+                return Math.max(0, Math.min(200, Math.round(val)));
+            }
+
+            function generateSensitivity() {
+                // OJO: los selectores no deben tener dos puntos seguidos (..), por eso usamos
+                // '.ff-device', '.ff-style', etc. aquí.
+                const device = getActiveValue('.ff-device', 'data-device') || 'iphone';
+                const style = getActiveValue('.ff-style', 'data-style') || 'rush';
+                const dpi = getActiveValue('.ff-dpi', 'data-dpi') || 'medium';
+                const hud = getActiveValue('.ff-hud', 'data-hud') || '3';
+                const base = parseInt(baseSensInput.value, 10) || 120;
+
+                let general = base;
+                let redDot = base - 2;
+                let twoX = base - 5;
+                let fourX = base - 8;
+                let awm = base - 20;
+                let freeLook = base;
+
+                // Ajustes por dispositivo
+                if (device === 'android') {
+                    general += 2;
+                    redDot += 2;
+                } else if (device === 'iphone') {
+                    general -= 1;
+                    redDot -= 1;
+                }
+
+                // Ajustes por DPI / tamaño
+                if (dpi === 'high') {
+                    general += 4;
+                    redDot += 3;
+                    freeLook += 4;
+                } else if (dpi === 'low') {
+                    general -= 4;
+                    redDot -= 3;
+                    freeLook -= 4;
+                }
+
+                // Estilo de juego
+                if (style === 'rush') {
+                    general += 4;
+                    redDot += 4;
+                    twoX += 3;
+                    fourX += 2;
+                } else if (style === 'control') {
+                    general -= 4;
+                    redDot -= 3;
+                    twoX -= 2;
+                    fourX -= 1;
+                    awm -= 3;
+                } else if (style === 'emulador') {
+                    general -= 3;
+                    redDot -= 3;
+                    twoX -= 3;
+                    fourX -= 3;
+                    awm -= 2;
+                }
+
+                // HUD (más dedos = más control, se puede subir un poco)
+                const hudInt = parseInt(hud, 10);
+                if (hudInt >= 4) {
+                    general += 3;
+                    redDot += 3;
+                    twoX += 2;
+                } else if (hudInt <= 2) {
+                    general -= 2;
+                    redDot -= 2;
+                }
+
+                sensGeneral.textContent = clamp(general);
+                sensRedDot.textContent = clamp(redDot);
+                sens2x.textContent = clamp(twoX);
+                sens4x.textContent = clamp(fourX);
+                sensAwm.textContent = clamp(awm);
+                sensFreeLook.textContent = clamp(freeLook);
+
+                if (window.securityLogger) {
+                    window.securityLogger.logEvent('ff_sensitivity_generated', {
+                        device,
+                        style,
+                        dpi,
+                        hud,
+                        base,
+                        general: clamp(general),
+                        redDot: clamp(redDot)
+                    }, 'info');
+                }
+            }
+
+            generateBtn.addEventListener('click', generateSensitivity);
+            // Generar una vez al cargar
+            generateSensitivity();
+
+            function getConfigText() {
+                return [
+                    'SENSIBILIDAD FREE FIRE (ModeX Pro)',
+                    '----------------------------------',
+                    `General: ${sensGeneral.textContent}`,
+                    `Mira de punto rojo: ${sensRedDot.textContent}`,
+                    `Mira 2x: ${sens2x.textContent}`,
+                    `Mira 4x: ${sens4x.textContent}`,
+                    `Mira AWM / Franco: ${sensAwm.textContent}`,
+                    `Mira libre: ${sensFreeLook.textContent}`
+                ].join('\n');
+            }
+
+            copyConfigBtn.addEventListener('click', () => {
+                const text = getConfigText();
+                navigator.clipboard.writeText(text).then(() => {
+                    alert('✅ Configuración copiada. Pégala en tus notas o en otro dispositivo.');
+                }).catch(() => {
+                    alert('No se pudo copiar automáticamente. Copia manualmente desde la consola.');
+                    console.log(text);
+                });
+            });
+
+            // Presets en localStorage
+            function loadPresets() {
+                const raw = localStorage.getItem('modex_ff_presets');
+                if (!raw) return [];
+                try {
+                    return JSON.parse(raw) || [];
+                } catch {
+                    return [];
+                }
+            }
+
+            function savePresets(presets) {
+                localStorage.setItem('modex_ff_presets', JSON.stringify(presets));
+            }
+
+            function renderPresets() {
+                const presets = loadPresets();
+                presetList.innerHTML = '';
+                if (!presets.length) {
+                    presetListWrapper.classList.add('hidden');
+                    return;
+                }
+                presetListWrapper.classList.remove('hidden');
+                presets.forEach((p, idx) => {
+                    const div = document.createElement('div');
+                    div.className = 'flex items-center justify-between bg-gray-900/70 border border-gray-700 rounded-xl px-3 py-2';
+                    div.innerHTML = `
+                        <div class="text-left">
+                            <p class="font-semibold text-sm text-yellow-300">${p.name}</p>
+                            <p class="text-xs text-gray-400">${p.device.toUpperCase()} • ${p.style} • Pantalla ${p.dpi} • HUD ${p.hud} dedos</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <button data-idx="${idx}" class="ff-load-preset text-xs px-2 py-1 rounded bg-white/10 hover:bg-white/20">Cargar</button>
+                            <button data-idx="${idx}" class="ff-delete-preset text-xs px-2 py-1 rounded bg-red-500/20 hover:bg-red-500/40 text-red-200">X</button>
+                        </div>
+                    `;
+                    presetList.appendChild(div);
+                });
+            }
+
+            savePresetBtn.addEventListener('click', () => {
+                const device = getActiveValue('.ff-device', 'data-device') || 'iphone';
+                const style = getActiveValue('.ff-style', 'data-style') || 'rush';
+                const dpi = getActiveValue('.ff-dpi', 'data-dpi') || 'medium';
+                const hud = getActiveValue('.ff-hud', 'data-hud') || '3';
+                const base = parseInt(baseSensInput.value, 10) || 80;
+
+                const name = prompt('Nombre para este preset (ej: iPhone Rush 3 dedos):');
+                if (!name) return;
+
+                const presets = loadPresets();
+                presets.push({
+                    name,
+                    device,
+                    style,
+                    dpi,
+                    hud,
+                    base,
+                    general: sensGeneral.textContent,
+                    redDot: sensRedDot.textContent,
+                    twoX: sens2x.textContent,
+                    fourX: sens4x.textContent,
+                    awm: sensAwm.textContent,
+                    freeLook: sensFreeLook.textContent
+                });
+                savePresets(presets);
+                renderPresets();
+
+                if (window.securityLogger) {
+                    window.securityLogger.logEvent('ff_sensitivity_preset_saved', {
+                        name,
+                        device,
+                        style,
+                        dpi,
+                        hud
+                    }, 'info');
+                }
+            });
+
+            presetList.addEventListener('click', (e) => {
+                const loadBtn = e.target.closest('.ff-load-preset');
+                const deleteBtn = e.target.closest('.ff-delete-preset');
+                const presets = loadPresets();
+
+                if (loadBtn) {
+                    const idx = parseInt(loadBtn.dataset.idx, 10);
+                    const p = presets[idx];
+                    if (!p) return;
+
+                    document.querySelectorAll('.ff-device').forEach(c => c.classList.toggle('active', c.dataset.device === p.device));
+                    document.querySelectorAll('.ff-style').forEach(c => c.classList.toggle('active', c.dataset.style === p.style));
+                    document.querySelectorAll('.ff-dpi').forEach(c => c.classList.toggle('active', c.dataset.dpi === p.dpi));
+                    document.querySelectorAll('.ff-hud').forEach(c => c.classList.toggle('active', c.dataset.hud === String(p.hud)));
+                    baseSensInput.value = p.base;
+                    baseSensLabel.textContent = p.base;
+
+                    sensGeneral.textContent = p.general;
+                    sensRedDot.textContent = p.redDot;
+                    sens2x.textContent = p.twoX;
+                    sens4x.textContent = p.fourX;
+                    sensAwm.textContent = p.awm;
+                    sensFreeLook.textContent = p.freeLook;
+                }
+
+                if (deleteBtn) {
+                    const idx = parseInt(deleteBtn.dataset.idx, 10);
+                    presets.splice(idx, 1);
+                    savePresets(presets);
+                    renderPresets();
+                }
+            });
+
+            renderPresets();
+
+            // Menú móvil
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+  </script>
+
+    <style>
+        .ff-chip {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.75rem;
+            border: 1px solid #374151; /* gray-700 */
+            background-color: rgba(17, 24, 39, 0.6); /* gray-900/60 */
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        @media (min-width: 768px) {
+            .ff-chip {
+                font-size: 0.875rem;
+            }
+        }
+        .ff-chip:hover {
+            background-color: rgba(234, 179, 8, 0.1); /* yellow-500/10 */
+            border-color: #eab308; /* yellow-500 */
+        }
+        .ff-chip.active {
+            border-color: #eab308;
+            background-color: rgba(234, 179, 8, 0.2);
+            color: #fef9c3;
+            position: relative;
+        }
+        .ff-chip.active::after {
+            content: '';
+            position: absolute;
+            top: 0.35rem;
+            right: 0.35rem;
+            width: 0.4rem;
+            height: 0.4rem;
+            border-radius: 9999px;
+            background-color: #ef4444; /* red dot */
+            box-shadow: 0 0 8px rgba(239, 68, 68, 0.8);
+        }
+        .ff-sens-item {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(17, 24, 39, 0.8);
+            border: 1px solid #374151;
+            border-radius: 1rem;
+            padding: 0.75rem 1rem;
+        }
+        .ff-sens-label {
+            font-size: 0.75rem;
+            color: #9ca3af;
+        }
+        .ff-sens-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #facc15; /* yellow-400 */
+        }
+        /* Valor de Punto rojo ligeramente más rojizo para destacarlo */
+        #sensRedDot.ff-sens-value {
+            color: #f87171; /* red-400 */
+        }
+    </style>
+</body>
+</html>
